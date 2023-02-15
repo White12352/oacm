@@ -38,6 +38,9 @@ git clone --depth=1 https://github.com/ntlf9t/luci-app-easymesh.git package/luci
 #svn co https://github.com/281677160/openwrt-package/branches/21.02/mosdns package/mosdns
 #rm -rf package/helloworld
 rm -rf feeds/luci/applications/luci-app-ssr-plus
+rm -rf feeds/packages/net/hysteria
+rm -rf feeds/packages/net/naiveproxy
+rm -rf feeds/packages/net/xray-core
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-vssr
