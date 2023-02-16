@@ -18,3 +18,4 @@
 
 # rm -rf target/linux/ramips
 # svn export https://github.com/padavanonly/immortalwrt/trunk/target/linux/ramips target/linux/ramips
+git clone https://git01.mediatek.com/openwrt/feeds/mtk-openwrt-feeds package/mtk-openwrt-feeds
