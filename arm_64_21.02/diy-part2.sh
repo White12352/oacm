@@ -57,8 +57,8 @@ svn co https://github.com/281677160/openwrt-package/branches/21.02/smartdns pack
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/aliyundrive-webdav package/aliyundrive-webdav
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliyundrive-webdav package/luci-app-aliyundrive-webdav
 git clone --depth=1 https://github.com/messense/aliyundrive-webdav.git package/aliyundrive-webdav
-#rm -rf package/feeds/luci/luci-theme-neobird
-#git clone https://github.com/lwb1978/luci-theme-neobird.git package/feeds/luci/luci-theme-neobird
+rm -rf package/feeds/luci/luci-theme-neobird
+git clone https://github.com/lwb1978/luci-theme-neobird.git package/feeds/luci/luci-theme-neobird
 #rm -rf feeds/luci/themes/luci-theme-argon
 #git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon.git package/feeds/luci/luci-theme-argon
 #rm -rf feeds/luci/applications/luci-app-unblockneteasemusic
@@ -76,4 +76,5 @@ find ./ | grep Makefile | grep mosdns | xargs rm -f
 git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 # 把bootstrap替换成argon为源码必选主题（可自行修改您要的,主题名称必须对,比如下面代码的[argon],源码内必须有该主题,要不然编译失败）
-sed -i "s/bootstrap/argon/ig" feeds/luci/collections/luci/Makefile
+#sed -i "s/bootstrap/argon/ig" feeds/luci/collections/luci/Makefile
+sed -i "s/bootstrap/neobird/ig" feeds/luci/collections/luci/Makefile
